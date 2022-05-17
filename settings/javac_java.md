@@ -1,5 +1,5 @@
 #compile java with jar
-    javac -classpath .:lib/[your jar files for each] javafile.java -d [output classes directory (strongly suggested)]
+    javac -classpath .:lib/[your jar files for each]:classes javafile.java -d [output classes directory (strongly suggested)]
 #run java with jar
     cd classes
     java -classpath .:../lib/[your jar files for each] java.class(like com.king.hello)
