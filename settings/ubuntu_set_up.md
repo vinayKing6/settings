@@ -37,12 +37,13 @@
     #neovim配置:
 
         #安装node,npm:
-            curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+            curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
             sudo apt install nodejs
         
         #安装clangd:
             sudo apt-get install llvm
             sudo apt-get install clang clang-10
+            sudo apt-get install clangd
         
         mkdir ~/.config/nvim
         mkdir ~/.config/autoload
@@ -55,6 +56,7 @@
                 安装coc-java coc-tssever coc-pyright
         
         #python配置:
+            sudo apt install python3-pip
             pip3 install jedi==0.17
 
         #c/c++配置:
@@ -98,8 +100,14 @@
 #安装maven:
 
 #配置oh my zsh:
-    sudo install zsh
+    sudo apt install zsh
+
+    wget https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh
+    ./install.sh(选择改为默认shell)
     https://juejin.cn/post/7023578642156355592
+
     下载inrc: http://mimosa-pudica.net/zsh-incremental.html
+    将incr.zsh 复制到~/.oh-my-zsh/plugins/incr/目录下
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
     source .zshrc
 
