@@ -9,7 +9,7 @@
 ## create a simple maven project:
 
 ```shell
-    mvn archetype:generate "-DgroupId=com.companyname.bank" "-DartifactId=consumerBanking" "-DarchetypeArtifactId=maven-archetype-quickstart" "-DinteractiveMode=false"
+    mvn archetype:generate "-DgroupId=com.vinay" "-DartifactId=algorithm" "-DarchetypeArtifactId=maven-archetype-quickstart" "-DinteractiveMode=false"
 ```
 
 ## change java compiler version:
