@@ -96,10 +96,9 @@ mkdir ~/.config/nvim
 ```
 
 ###     java配置:
-
-​        下载jdt.ls:https://download.eclipse.org/jdtls/milestones/1.9.0/jdt-language-server-1.9.0-202203031534.tar.gz
-​        export JDTLS_HOME=$HOME/gits/jdt
-​        复制jdt/* 到 ~/.config/coc/coc-java-data/server/
+下载jdt.ls:https://download.eclipse.org/jdtls/milestones/1.9.0/jdt-language-server-1.9.0-202203031534.tar.gz
+   export JDTLS_HOME=$HOME/gits/jdt #必须是JDTLS_HOME，否则lsp不起作用 
+   复制jdt/* 到 ~/.config/coc/coc-java-data/server/
 
 ###     neovim lsp:
 
@@ -142,6 +141,8 @@ mkdir ~/.config/nvim
 ```shell
     git clone https://github.com/Johnny4Fun/.tmux.git
     ln -s -f .tmux/.tmux.conf
+    tmux kill-server
+    tmux source ~/.tmux.conf
 ```
 
 ## 安装maven:
@@ -151,6 +152,7 @@ mkdir ~/.config/nvim
 ```shell
 sudo apt install zsh
 wget https://gitee.com/mirrors/oh-my-zsh/raw/master/tools/install.sh
+
 ./install.sh #(选择改为默认shell)
 
 #https://juejin.cn/post/7023578642156355592
